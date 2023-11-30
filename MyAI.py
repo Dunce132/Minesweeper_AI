@@ -1,16 +1,3 @@
-# ==============================CS-199==================================
-# FILE:			MyAI.py
-#
-# AUTHOR: 		Justin Chung
-#
-# DESCRIPTION:	This file contains the MyAI class. You will implement your
-#				agent in this file. You will write the 'getAction' function,
-#				the constructor, and any additional helper functions.
-#
-# NOTES: 		- MyAI inherits from the abstract AI class in AI.py.
-#
-#				- DO NOT MAKE CHANGES TO THIS FILE.
-# ==============================CS-199==================================
 
 from AI import AI
 from Action import Action
@@ -21,9 +8,6 @@ import itertools
 class MyAI( AI ):
 
     def __init__(self, rowDimension, colDimension, totalMines, startX, startY):
-        ########################################################################
-        #							YOUR CODE BEGINS						   #
-        ########################################################################
         self.row = colDimension
         self.col = rowDimension
         self.totalMines = totalMines
@@ -54,9 +38,6 @@ class MyAI( AI ):
         # 1 represents covered + marked tile
         # 2 represents covered + unmarked tile
         # we start off as everything being covered + unmarked
-        ########################################################################
-        #							YOUR CODE ENDS							   #
-        ########################################################################
     
     def flag(self, x, y):
         self.board[x][y] = 'B'
